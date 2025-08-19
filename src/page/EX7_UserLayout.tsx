@@ -1,34 +1,36 @@
-import "../index.css"
+import './EX7_UserLayout.css'
 
-const EX7_UserLayout = () => {
-    return(
-        <main className={"mainEx7"}>
-            <nav className={"navEx7"}>
-                Navigation
-            </nav>
+const UserLayout = () => {
+  return (
+    <div className="container">
+      <header>
+        <div className="head">Header</div>
+        <div className="navbar">Navigation</div>
+      </header>
+      <div className="content">
+        <aside>Menu</aside>
+        <div className="main-content">
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+            <div className="cart">Cart</div>
+        </div>
+        <aside>Article</aside>
+      </div>
+    </div>
+  );
+};
 
-            <section className={"sectionEx6"}>
-                <div className={"menuEx7"}>
-                    Menu
-                </div>
-
-                <div className={"containerContentEx7"}>
-                    {
-                        Array.from({length:16}, (_, i) => (
-                        <div key ={i} className={"BoxEx7"}>
-                            Cart
-                        </div>
-                        ))
-                    }
-
-                </div>
-
-                <div className={"ArticleEx7"}>
-                    Article
-                </div>
-            </section>
-        </main>
-    );
-}
-
-export default EX7_UserLayout;
+export default UserLayout
